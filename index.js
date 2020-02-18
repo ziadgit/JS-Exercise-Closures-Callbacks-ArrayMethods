@@ -234,8 +234,10 @@ return specificsizepeople
  * @param runners array of runners like the one inside the /data/runners.js file.
  * @returns a number which is the sum of the donations by all runners.
 */
-function tallyUpDonations(/* CODE HERE */) {
-  /* CODE HERE */
+function tallyUpDonations(runners) {
+  const donations = [];
+  runners.forEach(element => donations.push(element.donation));
+  return donations.reduce((a, b) => a + b, 0)
 }
 
 /////////////// CLOSURES ///////////////
