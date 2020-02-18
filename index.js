@@ -156,6 +156,8 @@ function processContains(item, list, callback) {
  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
  * should return 3.
 */
+
+/* adapted from https://medium.com/dailyjs/how-to-remove-array-duplicates-in-es6-5daa8789641c */
 function processDuplicateFree(list, callback) {
   const dedupset = new Set(list);
   const deduparr = [...dedupset]
@@ -180,8 +182,8 @@ function processDuplicateFree(list, callback) {
  * @returns an array with all the runners' full names in the following format: "Smith, John".
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
-function getFullNames(/* CODE HERE */) {
-  /* CODE HERE */
+function getFullNames(runners) {
+  
 }
 
 /**
