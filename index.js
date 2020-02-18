@@ -183,7 +183,9 @@ function processDuplicateFree(list, callback) {
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
 function getFullNames(runners) {
-  
+  const fullnames = [];
+  runners.forEach(element => fullnames.push(`${element.last_name}, ${element.first_name}`));
+  return fullnames
 }
 
 /**
