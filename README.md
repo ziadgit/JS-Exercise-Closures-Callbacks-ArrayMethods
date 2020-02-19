@@ -44,3 +44,5 @@ Find the file `index.js` and complete the tasks until your tests are passing. On
 1. Work on your branch, push commits and create PR as usual
 
 <img alt='instructions screenshot' src='./instructions.png'>
+
+zh
